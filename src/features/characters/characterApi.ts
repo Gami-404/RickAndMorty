@@ -1,55 +1,57 @@
-import {  createApi } from '@reduxjs/toolkit/query/react'
-import { gql } from 'graphql-request'
+import {createApi} from '@reduxjs/toolkit/query/react'
+import {gql} from 'graphql-request'
 import {graphqlRequestBaseQuery} from '@rtk-query/graphql-request-base-query'
 
 
 export interface Character {
-    id:string,
-    name:string,
-    status:string,
-    gender:string,
-    species:string,
-    image:string,
-    location :{
-        name:string,
-        dimension:string
+    id: string,
+    name: string,
+    status: string,
+    gender: string,
+    species: string,
+    image: string,
+    location: {
+        name: string,
+        dimension: string
     }
 }
 
 export interface Pagination {
-    count:number,
-    pages:number,
-    next:number,
-    prev:number
-  }
-export interface Characters{
-    info:Pagination,
-    results:Character[]
-}
-export interface CharactersResponse {
-    characters:Characters
+    count: number,
+    pages: number,
+    next: number,
+    prev: number
 }
 
-export interface Episode{
-    id:string,
-    name:string,
-    air_date:string,
+export interface Characters {
+    info: Pagination,
+    results: Character[]
+}
+
+export interface CharactersResponse {
+    characters: Characters
+}
+
+export interface Episode {
+    id: string,
+    name: string,
+    air_date: string,
 }
 
 export interface CharacterResponse {
-    charactersByIds:{
-        episode:Episode[]
+    charactersByIds: {
+        episode: Episode[]
     }[]
 }
 
 
-
 export const CharacterApi = createApi({
-    reducerPath:'characters',
+    reducerPath: 'characters',
     baseQuery: graphqlRequestBaseQuery({url: 'https://rickandmortyapi.com/graphql'}),
     endpoints: (builder) => ({
-        getCharacters: builder.query<CharactersResponse,{ page?: number }>({query: ({ page }) => ({
-                    document: gql`
+        getCharacters: builder.query<CharactersResponse, { page?: number }>({
+            query: ({page}) => ({
+                document: gql`
                         query getCharacters($page: Int = 1){
                             characters(page: $page) {
                             results {
@@ -74,13 +76,14 @@ export const CharacterApi = createApi({
                             }
                         }
                     `,
-                    variables: {
-                        page
-                    },
-                    })
-                }),
-        getCharacterById: builder.query<CharacterResponse,{ ids?: string[] | string | undefined }>({query: ({ ids }) => ({
-            document: gql`
+                variables: {
+                    page
+                },
+            })
+        }),
+        getCharacterById: builder.query<CharacterResponse, { ids?: string[] | string | undefined }>({
+            query: ({ids}) => ({
+                document: gql`
                 query getCharacterById($ids: [ID!]!){
                     charactersByIds(ids:$ids){
                         created
@@ -92,13 +95,13 @@ export const CharacterApi = createApi({
                       }
                 }
             `,
-            variables: {
-                ids
-            },
+                variables: {
+                    ids
+                },
             })
         }),
 
 
     })
 })
-export const { useGetCharactersQuery ,useGetCharacterByIdQuery} = CharacterApi
+export const {useGetCharactersQuery, useGetCharacterByIdQuery} = CharacterApi
