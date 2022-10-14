@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="466a4a24-8f69-4ade-915d-4c882a24cdfd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/characters/character.test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/characters/CharacterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/characters/CharacterCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/characters/CharacterDialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/characters/CharacterDialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/characters/CharacterEpisodes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/characters/CharacterEpisodes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/characters/Characters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/characters/Characters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/characters/characterApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/characters/characterApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="437">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -100,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="character.test.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="character.test.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/features/characters/character.test.jsx">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -142,6 +137,9 @@
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
@@ -218,12 +216,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665771945045</updated>
-      <workItem from="1665771947636" duration="1375000" />
+      <workItem from="1665771947636" duration="2027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1375000" />
+    <option name="totallyTimeSpent" value="2027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -235,7 +233,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32968238" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -309,13 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -331,6 +322,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/features/characters/character.test.jsx">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
