@@ -48,7 +48,7 @@ export default function Characters() {
 
                 {(isFetching || isLoading) && <Backdrop sx={{color: '#fff'}} open={isFetching}> <CircularProgress/></Backdrop>}
 
-                <Box>{`${page} / ${totalPages}`}</Box>
+                <Box>Total Character {`${page} / ${totalPages}`}</Box>
 
                 <Grid container spacing={4}>
                     {characters.map((character) => (
