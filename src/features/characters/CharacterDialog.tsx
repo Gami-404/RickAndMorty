@@ -10,6 +10,7 @@ import {
     , Stack
     , CircularProgress
     , DialogActions
+    , Alert
 } from '@mui/material';
 
 import {Character, useGetCharacterByIdQuery} from "./characterApi";
@@ -24,7 +25,12 @@ export interface CharacterDialogProps {
 }
 
 export default function CharacterDialog({character, closeDialog}: CharacterDialogProps) {
-    const {data, isLoading} = useGetCharacterByIdQuery({ids: character?.id});
+    const {data, isLoading,isError} = useGetCharacterByIdQuery({ids: character?.id});
+
+    if(isError){
+        return <Alert severity="error">Something goes wrong</Alert>
+    }
+
     if (!character) return <></>;
     const {name, image, gender, status, species, location} = character;
 

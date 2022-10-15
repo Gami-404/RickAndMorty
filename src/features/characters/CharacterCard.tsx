@@ -21,8 +21,8 @@ export function CharacterInfo({name, value}: { name: string, value: string }) {
 }
 
 export default function CharacterCard(props: CharacterCardProps) {
-    const {name, gender, image, status, species} = props.character;
-    return (<Card sx={{height: '100%', display: 'flex', flexDirection: 'column'}}>
+    const {id,name, gender, image, status, species} = props.character;
+    return (<Card sx={{height: '100%', display: 'flex', flexDirection: 'column'}} data-testid={`character-${id}`}>
         <CardMedia
             component="img"
             image={image}
